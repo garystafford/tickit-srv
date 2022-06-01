@@ -1,0 +1,8 @@
+# build for jvm using uber-jar
+#quarkus.package.type=uber-jar
+FROM openjdk:17-alpine
+COPY build/*.jar /home/tickit-srv.jar
+RUN chmod 775 /home
+WORKDIR /home/
+EXPOSE 8080
+CMD ["java", "-jar", "tickit-srv.jar"]

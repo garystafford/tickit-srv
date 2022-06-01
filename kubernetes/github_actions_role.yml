@@ -1,0 +1,41 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  namespace: tickit
+  name: tickit-deployer
+rules:
+  - apiGroups:
+      - ""
+      - "rbac.authorization.k8s.io"
+      - "apps"
+      - "autoscaling"
+      - "batch"
+      - "acme.cert-manager.io"
+      - "cert-manager.io"
+      - "extensions"
+      - "metrics.k8s.io"
+      - "networking.k8s.io"
+      - "policy"
+    resources: ["*"]
+    verbs:
+      - get
+      - list
+      - watch
+      - create
+      - update
+      - patch
+      - delete
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: tickit-deployment
+  namespace: tickit
+roleRef:
+  kind: Role
+  apiGroup: rbac.authorization.k8s.io
+  name: tickit-deployer
+subjects:
+  - kind: Group
+    name: eks-tickit-deployment-group
+    apiGroup: rbac.authorization.k8s.io
