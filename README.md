@@ -1,6 +1,4 @@
-[![Quarkus Native Docker Build Push](https://github.com/garystafford/tickit-srv-private/actions/workflows/docker-build-push.yml/badge.svg)](https://github.com/garystafford/tickit-srv/actions/workflows/docker-build-push.yml)
-
-# tickit-srv Project
+# Quarkus Microservice Application Project
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
