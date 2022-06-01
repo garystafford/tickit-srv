@@ -1,4 +1,10 @@
-# Quarkus Microservice Application Project
+[![Quarkus Native CI](https://github.com/garystafford/tickit-srv/actions/workflows/build-test.yml/badge.svg)](https://github.com/garystafford/tickit-srv/actions/workflows/build-test.yml)
+
+[![Quarkus Native Docker Build, Push, Deploy](https://github.com/garystafford/tickit-srv/actions/workflows/docker-build-push.yml/badge.svg)](https://github.com/garystafford/tickit-srv/actions/workflows/docker-build-push.yml)
+
+# Quarkus Microservice Application Demonstration
+
+Source code for the post [Building and Deploying Cloud-Native Quarkus Applications to Kubernetes](https://garystafford.medium.com/building-and-deploying-cloud-native-quarkus-applications-to-kubernetes-a4c494e3a843).
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
