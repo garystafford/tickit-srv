@@ -6,7 +6,7 @@
 
 Source code for the post [Building and Deploying Cloud-Native Quarkus Applications to Kubernetes](https://garystafford.medium.com/building-and-deploying-cloud-native-quarkus-applications-to-kubernetes-a4c494e3a843).
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
+This project uses Quarkus, the 'Supersonic Subatomic Java' Framework.
 
 If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
 

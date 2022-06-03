@@ -71,15 +71,6 @@ jobs:
         with:
           args: apply -f build/kubernetes/kubernetes.yml -n tickit
 
-      - name: Get Kubernetes resources
-        uses: kodermax/kubectl-aws-eks@master
-        env:
-          KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
-          KUBECTL_VERSION: "v1.23.6"
-          IAM_VERSION: "0.5.8"
-        with:
-          args: get all -n tickit
-
       - name: Upload Kubernetes artifact
         uses: actions/upload-artifact@v3
         with:
