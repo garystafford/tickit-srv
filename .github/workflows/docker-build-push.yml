@@ -45,7 +45,7 @@ jobs:
             -Dquarkus.kubernetes.service-type=node-port
             -Dquarkus.kubernetes.node-port=32319
             -Dquarkus.kubernetes.part-of=tickit-app
-            -Dquarkus.kubernetes.version=1.1.0
+            -Dquarkus.kubernetes.version=1.0.0
             -Dquarkus.kubernetes.name=tickit-srv
             -Dquarkus.kubernetes.resources.requests.memory=256Mi
             -Dquarkus.kubernetes.resources.requests.cpu=100m
