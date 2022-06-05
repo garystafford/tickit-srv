@@ -3,6 +3,8 @@
 All commands made from root of project.
 
 ```shell
+cat kubernetes/kube_config.yml | base64
+
 export NAMESPACE=tickit
 
 # Namespace
@@ -16,4 +18,8 @@ kubectl apply -f kubernetes/secret.yml -n ${NAMESPACE}
 
 # Command used by GitHub Action to deploy Quarkus application
 kubectl apply -f build/kubernetes/kubernetes.yml -n ${NAMESPACE}
+
+# HorizontalPodAutoscaler (HPA)
+kubectl apply -f tickit-srv-hpa.yml -n ${NAMESPACE}
+kubectl describe -n ${NAMESPACE} horizontalpodautoscaler.autoscaling/tickit-srv
 ```

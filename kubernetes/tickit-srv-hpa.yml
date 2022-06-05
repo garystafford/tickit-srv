@@ -1,0 +1,24 @@
+apiVersion: autoscaling/v2beta2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: tickit-srv
+spec:
+  minReplicas: 2
+  maxReplicas: 10
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: AverageValue
+          averageValue: 250m
+    - type: Resource
+      resource:
+        name: memory
+        target:
+          averageUtilization: 80
+          type: Utilization
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: tickit-srv
