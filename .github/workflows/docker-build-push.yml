@@ -39,7 +39,7 @@ jobs:
             -Dquarkus.native.container-build=true
             -Dquarkus.container-image.group=${GITHUB_REPOSITORY_OWNER}
             -Dquarkus.container-image.tag=${{ env.RELEASE_VERSION }}
-            -Dquarkus.kubernetes.replicas=3
+            -Dquarkus.kubernetes.replicas=4
             -Dquarkus.kubernetes-config.secrets=tickit
             -Dquarkus.kubernetes-config.secrets.enabled=true
             -Dquarkus.kubernetes.service-type=node-port
