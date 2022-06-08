@@ -1,9 +1,9 @@
-package com.tickit;
+package com.tickit.category;
 
 import io.quarkus.test.junit.QuarkusIntegrationTest;
 
 @QuarkusIntegrationTest
-public class BuyerResourceTestIT extends BuyerResourceTest {
+public class CategoryResourceTestIT extends CategoryResourceTest {
 
     // Execute the same tests but in native mode.
 }

@@ -3,7 +3,7 @@
 All commands made from root of project.
 
 ```shell
-cat kubernetes/kube_config.yml | base64
+cat kubernetes/kubeconfig.yml | base64
 
 export NAMESPACE=tickit
 

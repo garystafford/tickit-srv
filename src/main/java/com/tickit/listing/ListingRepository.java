@@ -15,8 +15,8 @@ public class ListingRepository implements PanacheRepositoryBase<ListingEntity, I
 
         if (page < 1) page = 1;
         if (size < 1) size = 5;
-        page = (page - 1) * size;
-        if (sortBy == null) sortBy = "listid";
+        page = page - 1; // zero-based
+        if (sortBy == null) sortBy = "id";
         Sort.Direction direction = Sort.Direction.Ascending;
         if (Objects.equals(orderBy, "desc")) direction = Sort.Direction.Descending;
 

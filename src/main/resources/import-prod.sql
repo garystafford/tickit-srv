@@ -85,8 +85,8 @@ CREATE SEQUENCE public.category_cat_id_seq
 CREATE TABLE public.category
 (
     catid    integer     NOT NULL DEFAULT nextval('public.category_cat_id_seq'::regclass),
-    catgroup varchar(10) NOT NULL,
-    catname  varchar(10) NOT NULL,
+    catgroup varchar(20) NOT NULL,
+    catname  varchar(20) NOT NULL,
     catdesc  varchar(50) NOT NULL,
     CONSTRAINT category_pkey PRIMARY KEY (catid)
 );
